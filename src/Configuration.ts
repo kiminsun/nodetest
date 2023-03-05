@@ -46,7 +46,7 @@ export namespace Configuration {
         iv: "IXJBt4MflFxvxKkn",
     });
 
-    export let SYSTEM_PASSWORD = async () => "https://github.com/samchon";
+    export let SYSTEM_PASSWORD = async () => "https://github.com/kiminsun";
 
     /**
      * @internal

@@ -1,7 +1,7 @@
 # Backend
 ## 1. Outline
 ### 1.1. Introduction
-[![Build Status](https://github.com/samchon/backend/workflows/build/badge.svg)](https://github.com/samchon/backend/actions?query=workflow%3Abuild)
+[![Build Status](https://github.com/kiminsun/nodetest/workflows/build/badge.svg)](https://github.com/kiminsun/nodetest/actions?query=workflow%3Abuild)
 
 A template repository for the Typescript Backend Server using those libraries:
 
@@ -10,7 +10,7 @@ A template repository for the Typescript Backend Server using those libraries:
     - [`@nestia/sdk`](https://github.com/samchon/sdk): SDK and Swagger Documents generator
   - [TypeORM](https://typeorm.io) and [**`safe-typeorm`**](https://github.com/samchon/safe-typeorm): Helper of TypeORM in the compilation level
 
-Also, I've prepared lots of some backend projects based on this template project. Reading this [README.md](https://github.com/samchon/backend) document and traveling below example projects, you may understand how to develop the TypeScript backend server with the [nestia](https://github.com/samchon/nestia) and [safe-typeorm](https://github.com/samchon/safe-typeorm).
+Also, I've prepared lots of some backend projects based on this template project. Reading this [README.md](https://github.com/kiminsun/nodetest) document and traveling below example projects, you may understand how to develop the TypeScript backend server with the [nestia](https://github.com/samchon/nestia) and [safe-typeorm](https://github.com/samchon/safe-typeorm).
 
   - [samchon/fake-iamport-server](https://github.com/samchon/fake-iamport-server): Fake iamport server, but real SDK
   - [samchon/fake-toss-payments-server](https://github.com/samchon/fake-toss-payments-server): Fake toss-payments server, but real SDK
@@ -32,7 +32,7 @@ When you've created a new backend project through this template project, you can
 | DB_NAME      | Database to connnect
 | DB_SCHEMA    | Database schema to use
 | DB_ACCOUNT   | Database account to use, not root account
-| https://github.com/samchon/backend | Your repository URL
+| https://github.com/kiminsun/nodetest | Your repository URL
 
 After those replacements, you should specialize the [`src/Configuration.ts`](src/Configuration.ts), [.github/workflows/build.yml](.github/workflows/build.yml) files. Open those files and change constant values of these files to be suitable for your project. Also, open markdown files like this [README.md](README.md) and write your specific project story. Below is list of the markdown files.
 
@@ -192,9 +192,9 @@ After those declarations, build the client [SDK](#32-sdk) through the `npm run b
   - Deploy to the Dev and Real servers.
 
 ### 3.2. SDK
-[`@ORGANIZATION/PROJECT`](https://github.com/samchon/backend) provides SDK (Software Development Kit) for convenience.
+[`@ORGANIZATION/PROJECT`](https://github.com/kiminsun/nodetest) provides SDK (Software Development Kit) for convenience.
 
-For the client developers who are connecting to this backend server, [`@ORGANIZATION/PROJECT`](https://github.com/samchon/backend) provides not API documents like the Swagger, but provides the API interaction library, one of the typical SDK (Software Development Kit) for the convenience.
+For the client developers who are connecting to this backend server, [`@ORGANIZATION/PROJECT`](https://github.com/kiminsun/nodetest) provides not API documents like the Swagger, but provides the API interaction library, one of the typical SDK (Software Development Kit) for the convenience.
 
 With the SDK, client developers never need to re-define the duplicated API interfaces. Just utilize the provided interfaces and asynchronous functions defined in the SDK. It would be much convenient than any other Rest API solutions.
 
@@ -453,11 +453,11 @@ List of the run commands defined in the [package.json](package.json) are like be
     - npm run update real
 
 ### 5.2. Github Action
-[![Build Status](https://github.com/samchon/backend/workflows/build/badge.svg)](https://github.com/samchon/backend/actions?query=workflow%3Abuild)
+[![Build Status](https://github.com/kiminsun/nodetest/workflows/build/badge.svg)](https://github.com/kiminsun/nodetest/actions?query=workflow%3Abuild)
 
 This backend project utilizes the Github Action to run the cloud CI (Continuous Integration) test whenever a commit or PR event occurs. The CI test starts from installing the backend server program to a clean Ubuntu system that nothing has been installed yet.
 
-You know what? All of CI processes, like installing required programs into the clean Ubuntu and compiling and running the Test Automation Program, are defined in the [`.github/workflows/build.yml`](.github/workflows/build.yml) script file. Also <font color="green">passing</font> or <font color="red">failure</font> expressed from the above [badge](https://github.com/samchon/backend/actions?query=workflow%3Abuild) represents outcome of the CI test.
+You know what? All of CI processes, like installing required programs into the clean Ubuntu and compiling and running the Test Automation Program, are defined in the [`.github/workflows/build.yml`](.github/workflows/build.yml) script file. Also <font color="green">passing</font> or <font color="red">failure</font> expressed from the above [badge](https://github.com/kiminsun/nodetest/actions?query=workflow%3Abuild) represents outcome of the CI test.
 
 ### 5.3. Related Repositories
 > Write the related repositories down.
